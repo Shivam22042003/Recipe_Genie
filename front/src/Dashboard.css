@@ -1,0 +1,157 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: rgba(0, 123, 255, 0.2);
+  padding: 30px 20px;
+  backdrop-filter: blur(10px);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Profile Image Upload */
+.profile-image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+  background-color: #ffffff20;
+}
+
+.user-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Profile Info Section */
+.profile-info {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Button */
+.edit-btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ffa000, #ffc107);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(to right, #ff8f00, #ffb300);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.content section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Chart Section Placeholder */
+.chart-placeholder {
+  width: 100%;
+  height: 300px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Scrollbar for content */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
